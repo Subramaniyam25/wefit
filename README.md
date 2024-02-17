@@ -1,2 +1,2 @@
 # wefit
-Mini_project
+It is mini project for web technologies
