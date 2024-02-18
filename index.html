@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Fit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="navi.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="full">
+        <div class="hea">
+        <div class="heading">
+            <h1>We Fit</h1>
+        </div>
+        <div class="button">
+            <h1 onclick="op()" id="change">=</h1>
+            <h1 onclick="cl()"id="change1" style="display: none;">x</h1>
+        </div></div>
+        <div class="subhead" id="myH1">
+            <a href="index.html">Home</a>
+            <a href="tracker.html">Our Progress</a>
+            <a href="services.html">Our Services</a>
+        </div>
+    </nav>
+
+
+<div style="background-color: #1A1A1D;padding: 5px;margin: 20px;text-align: center;">
+    <div style="position: relative;">
+    <video style="max-width: 100%;border-radius: 5px; height: auto;" autoplay loop muted><source src="asset/video.mp4" class="object-fit-fill"></video>
+    <div style="position: absolute;top: 40%;left: 50%;transform: translate(-50%, -50%);">
+        <img style="max-width: 100%;height: auto;" src="./asset/s1.png">
+        <a style="max-width: 100%;
+        height: auto;
+        padding: 10px;
+        background-color: rgb(235, 167, 20);
+        color: #1A1A1D;
+        border-radius: 5px;
+        text-decoration: none;" href="tracker.html"><b>Our Progress</b></a>
+    </div>
+    </div>
+    <div>
+    <h1 style="color: rgb(235, 167, 20);">About Us</h1>
+    <div style="background-color: rgb(235, 167, 20);border-radius: 5px;padding: 10px;margin: 10px;">
+        <h2>Our Vision</h2>
+        <p style="color: #6F2232;font-size: 25px;"><b>To empower individuals to transform their lives through fitness</b></p>
+    </div>
+    <div style="background-color: rgb(235, 167, 20);border-radius: 5px;padding: 10px;margin: 10px;">
+        <h2>Our Mission</h2>
+        <p style="color: #6F2232;font-size: 25px;"><b>Making a fit and healthy lifestyle accessible to all</b></p>
+    </div>
+    </div>
+    <div>
+        <h1 style="color: rgb(235, 167, 20);">Reviews</h1>
+        <div style="background-color: rgb(235, 167, 20);border-radius: 5px;padding: 10px;margin: 10px;">
+            <img src="asset/swetha.png" style="border-radius: 50%;height: 100px;width: 100px;background-color: #1A1A1D;padding: 5px;">
+            <h3>Swetha</h3>
+            <p style="color: #6F2232;font-size: 25px;"><b>The gym is amazing. Amazing facility, top equipment and great environment.</b></p>
+        </div>
+        <div style="background-color: rgb(235, 167, 20);border-radius: 5px;padding: 10px;margin: 10px;">
+            <img src="asset/emily.png" style="border-radius: 50%;height: 100px;width: 100px;">
+            <h3>Emily</h3>
+            <p style="color: #6F2232;font-size: 25px;"><b>Good service with friendly staff and super clean and comfortable gym for everyone from beginners to professional athletes to train at.</b></p>
+        </div>
+        <div style="background-color: rgb(235, 167, 20);border-radius: 5px;padding: 10px;margin: 10px;">
+            <img src="asset/james.png" style="border-radius: 50%;height: 100px;width: 100px;background-color: #1A1A1D;padding: 5px;">
+            <h3>James</h3>
+            <p style="color: #6F2232;font-size: 25px;"><b>He is extremely reliable & punctual – always set up & ready to start training ahead of time, with an exercise routine planned.</b></p>
+        </div>
+    </div>
+</div>
+<footer style="background-color: #1A1A1D;padding: 5px;margin: 20px;border-radius: 5px;">
+    <div style="background-color: rgb(235, 167, 20);border-radius: 5px;padding: 10px;margin: 10px;text-align: center;">
+        <img src="asset/contact.png" style="border-radius: 50%;height: 100px;width: 100px;">
+        <h3><span style="color: #6F2232">Email Us : </span>wefit@gmail.com <br>
+            <span style="color: #6F2232">Phone No : </span>2345-45903</h3>
+        <p style="color: #6F2232;font-size: 25px;"><b>Thank you for a fantastic workout experience</b></p>
+    </div>
+</footer>
+<script>
+    function op(){
+    document.getElementById("change").style.display='none';
+    document.getElementById("change1").style.display='block';
+    document.getElementById("myH1").style.display = "block";
+    }
+    function cl(){
+    document.getElementById("change1").style.display='none';
+    document.getElementById("change").style.display='block';
+    document.getElementById("myH1").style.display = "none";
+    }
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
