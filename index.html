@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="form.css" rel="stylesheet">
+    <title>Form</title>
+</head>
+<body>
+    <form class="whole" action="home.html">
+        <center><div>
+        <h1 style="text-align: center;color:#b30f30;">SIGN UP</h1>
+        <label>User Name :</label><br>
+        <input id="name" style="max-width: 100%;height: auto;width: 500px;" type="text" placeholder="Username..." required ><br>
+        <h1 id="al_name" style="display: none;font-size: 15px;">Name is Invalid</h1>
+        <br>
+        <label>Email :</label><br>
+        <input id="email" style="max-width: 100%;height: auto;width: 500px;" type="email" placeholder="Email..." required><br><br>
+        <label>Password :</label><br>
+        <input id="password" style="max-width: 100%;height: auto;width: 500px;" type="password" placeholder="Password..." required><br>
+        <h1 id="al_pass_le" style="display: none;font-size: 15px;">Password contains atleast 8 characters</h1>
+        <br>
+        <label>Confirm Password :</label><br>
+        <input id="con_pass" style="max-width: 100%;height: auto;width: 500px;" type="password" placeholder="Confirm Password..." required><br>
+        <h1 id="al_pass" style="display: none;font-size: 15px;">Password Mismatch</h1>
+        </br>
+        <center><button id="submit"  type="submit" onclick="details(event)">Submit</button></center>
+    </div></center>
+    </form>
+    <script>
+        function details(){
+            
+            let name = document.getElementById("name").value;
+            let pass = document.getElementById("password").value;
+            let cpass = document.getElementById("con_pass").value;
+            if(name.length < 4)
+            {
+                    document.getElementById("al_name").style.display = "block";
+                    event.preventDefault();
+
+            }
+            if(name.length >= 4)
+            {
+                    document.getElementById("al_name").style.display = "none";
+            }
+            if(pass.length <8){event.preventDefault();document.getElementById("al_pass_le").style.display = "block";}
+            if(pass.length >=8){document.getElementById("al_pass_le").style.display = "none";}
+            if(pass.length>=8 && pass != cpass)
+            {
+                document.getElementById("al_pass").style.display = "block";
+                event.preventDefault();
+            }
+            if(pass == cpass){document.getElementById("al_pass").style.display = "none";}
+            localStorage.setItem("fullname",name);
+        }
+    </script>
+</body>
+</html>
