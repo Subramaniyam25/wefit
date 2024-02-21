@@ -1,0 +1,35 @@
+.card{
+    width: 10rem;
+    color: white;
+    text-align: center;
+    background-color: rgb(235, 167, 20);
+}
+.card:hover{
+    box-shadow: 5px 5px 5px 5px rgb(165, 163, 55);
+}
+.whole{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    background-color: #1A1A1D;padding: 20px;border-radius: 5px;
+}
+
+.head-text{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    
+    background-color: rgb(235, 167, 20);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+.shake{
+    height: 220px;
+    width: 200px
+}
+a.hover{background-color: #1A1A1D;color: rgb(235, 167, 20);}
